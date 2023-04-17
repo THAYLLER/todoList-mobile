@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { z } from 'zod';
+import MMKV from 'react-native-mmkv-storage';
 
 const UF = z.object({
   id: z.number(),
@@ -8,8 +9,13 @@ const UF = z.object({
 });
 
 const fetchStates = async () => {
+  const cachedData = MMKV.getMap('states');
+  if (cachedData) {
+    return cachedData;
+  }
   const { data } = await axios.get('https://servicodados.ibge.gov.br/api/v1/localidades/estados');
   UF.array().parse(data);
+  MMKV.setMap('states', data);
   return data;
 };
 

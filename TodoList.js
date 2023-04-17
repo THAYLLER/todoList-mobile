@@ -1,13 +1,14 @@
-import React, { useEffect } from 'react';
+import React  from 'react';
 import { StyleSheet, Text, View, FlatList } from 'react-native';
-import useStore, { useStates } from './store';
+import  { useStates } from './store';
 
-export default function App() {
+export default function TodoList() {
   const { states, isLoading, error } = useStates();
 
   return (
     <View style={styles.container}>
       <FlatList
+        testId="flat-list"
         data={states}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => <Text>{item.nome}</Text>}

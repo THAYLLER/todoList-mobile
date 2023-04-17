@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/Cellar/yarn/1.22.19/libexec/bin/yarn.js add @react-native-community/mmkv
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.22.19/libexec/bin/yarn.js add -D jest @types/jest react-test-renderer react-native-jest-transformer
 
 PATH: 
   /Users/thayllervilela/.rvm/gems/ruby-2.7.5/bin:/Users/thayllervilela/.rvm/gems/ruby-2.7.5@global/bin:/Users/thayllervilela/.rvm/rubies/ruby-2.7.5/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/thayllervilela/.rvm/gems/ruby-2.7.5/bin:/Users/thayllervilela/.rvm/gems/ruby-2.7.5@global/bin:/Users/thayllervilela/.rvm/rubies/ruby-2.7.5/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/thayllervilela/.rvm/bin:/Users/thayllervilela/.rvm/bin
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@react-native-community%2fmmkv: Not found
+  Error: https://registry.yarnpkg.com/react-native-jest-transformer: Not found
       at params.callback [as _callback] (/usr/local/Cellar/yarn/1.22.19/libexec/lib/cli.js:66145:18)
       at self.callback (/usr/local/Cellar/yarn/1.22.19/libexec/lib/cli.js:140890:22)
       at Request.emit (node:events:513:28)
